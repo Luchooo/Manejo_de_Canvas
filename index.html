@@ -1,0 +1,106 @@
+﻿<!doctype html>
+<html lang="es">
+<head>
+	<meta charset="UTF-8">
+	<title>Multiplexación de procesos</title>
+	<script src = "js/script.js"></script>
+	
+	<style type="text/css">
+	#descarga
+	{
+		cursor: pointer;
+	}
+
+	#caja {
+	position:relative;
+		top: -108px;
+		left: 610px;
+	}
+
+	body
+	{
+		font-size: 14px;
+		font-family: Arial;
+	}
+
+
+
+	
+	</style>
+
+</head>
+<body>
+	
+
+		<br>	<br>	<br>	<br>	<br>	<br>
+	<canvas width="500" height="461" id="canvas"></canvas>
+	<canvas id="myCanvas" width="730" height="460">
+	
+	</canvas>
+
+<br>
+<br>
+	<br>
+	<table border = '0'>
+		
+		<tr>
+			<td>Proceso 1 ---> </td>
+			<td>
+
+				<input type="text" id = "nombre_p1" placeholder='Nombre'>
+				<input type="number" id = "opcion_1" min = "1" placeholder="Lineas de Codigo" >
+				<input type="color" id = "color_p1" value='' >
+				<button id='agregar_P1'> Agregar </button>
+				<input type = "button" id = "Iniciar_Detener_1" value = "Iniciar">
+				</td>
+		</tr>
+
+
+
+
+		<tr>
+			<td>Proceso 2 ---> </td>
+			<td>
+				<input type="text" id = "nombre_p2" placeholder='Nombre'>
+				<input type="number" id = "opcion_2" min = "1" placeholder="Lineas de Codigo">
+				<input type="color" id = "color_p2" >
+				<button id='agregar_P2' > Agregar </button>
+				<input type = "button" id = "Iniciar_Detener_2" value = "Iniciar">
+			</td>
+		</tr>
+	
+		<tr>
+			<td>Proceso 3 ---> </td>
+			<td>
+
+				<input type="text" id = "nombre_p3" placeholder='Nombre'>
+				<input type="number" id = "opcion_3" min = "1" placeholder="Lineas de Codigo">
+				<input type="color" id = "color_p3" value='' >
+				<button id='agregar_P3'> Agregar </button>
+				<input type = "button" id = "Iniciar_Detener_3" value = "Iniciar">
+			</td>
+			
+	
+		</tr>
+
+
+	
+
+
+	</table>
+	<br>
+	<div id="caja"><textarea id="notificaciones" style="margin: 2px; height: 72px; width: 544px; color:#000000;" placeholder="!!Notificaciones!!"></textarea>
+	</div>
+	<hr>
+	<center>
+
+	<a id = "descarga" download = "ProcesosUDEC.png">
+		Descargar Gráfica
+	</a>
+	</center>
+
+		<img id="confusion" src="Imagenes/confusion.png" style="visibility:hidden" >
+
+
+</body>
+</html>
